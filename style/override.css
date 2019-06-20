@@ -13,3 +13,9 @@ body>footer .footer-footer img {
     height: 1rem;
     width: auto;
 }
+
+@media (max-width: 44.99em) {
+    .home main .info .wrapper {
+        display: unset;
+    }
+}
