@@ -1,0 +1,30 @@
+share:
+  - name: facebook
+    url: https://www.facebook.com/sharer.php?u=
+  - name: twitter
+    url: https://twitter.com/intent/tweet?text=
+
+follow:
+  - name: facebook
+    url: https://www.facebook.com/groups/GCPUG.KH/
+  - name: github
+    url: https://github.com/gcpug-kh
+  - name: meetup
+    url: https://www.meetup.com/GCPUG-Kaohsiung/
+
+#  - name: twitter
+#    url: https://twitter.com/devfesttoulouse
+#  - name: linkedin
+#    url: https://www.linkedin.com/company/devfesttoulouse/
+#  - name: youtube
+#    url: https://www.youtube.com/channel/UCx83f-KzDd3o1QK2AdJIftg
+
+content:
+  - title: footer_about_this_site
+    links:
+      - name: Hugo
+        url: https://gohugo.io/
+        newTab: true
+      - name: Devfest Toulouse Theme
+        url: https://themes.gohugo.io/devfest-theme-hugo/
+        newTab: true

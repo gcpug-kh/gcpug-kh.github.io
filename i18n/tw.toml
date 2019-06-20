@@ -1,0 +1,34 @@
+##########
+# Header #
+##########
+
+[language_switch]
+other = "Basculer en"
+
+##########
+# Footer #
+##########
+
+[footer_about_this_site]
+other = "About this site"
+
+[footer_share]
+other = "Share"
+
+[facebook_share_label]
+other = "Share on Facebook"
+
+[twitter_share_text]
+other = "#GCPUG-KH"
+
+[twitter_share_label]
+other = "Share on Twitter"
+
+[footer_follow_blog]
+other = "Follow our"
+
+[footer_follow_blog_blog]
+other = "blog"
+
+[footer_follow_us]
+other = "Follow us"
