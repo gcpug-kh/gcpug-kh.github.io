@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://gcpug-kh.github.io/"
 languageCode = "tw"
 defaultContentLanguage = "tw"
 title = "GCPUG Kaohsiung"
