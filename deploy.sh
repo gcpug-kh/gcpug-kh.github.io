@@ -15,6 +15,8 @@ rm -rf public/*
 echo "# Generating site"
 hugo &&
 
+echo "kaohsiung.gcpug.tw" > public/CNAME
+
 echo "# Updating master branch"
 cd public && git add --all && git commit -m "Publishing to master (deploy.sh)"
 git push origin master
