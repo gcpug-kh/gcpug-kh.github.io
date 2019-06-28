@@ -13,7 +13,7 @@ echo "# Removing existing files"
 rm -rf public/*
 
 echo "# Generating site"
-hugo &&
+npm run build:style && hugo &&
 
 echo "kaohsiung.gcpug.tw" > public/CNAME
 

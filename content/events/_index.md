@@ -1,9 +1,9 @@
 ---
-title: Blog
+title: Events
 
 menu:
   main:
-    weight: 2
+    weight: 1
 
 ---
 <div style="text-align:center">

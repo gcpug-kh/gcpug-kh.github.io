@@ -1,0 +1,24 @@
+{
+  "name": "devfest-theme-hugo",
+  "version": "1.0.0",
+  "description": "A theme for a conference website. Created for DevFest Toulouse 2019",
+  "repository": "https://github.com/GDGToulouse/devfest-theme-hugo",
+  "author": "Igor Laborie <ilaborie@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch:style": "node-sass src/style/theme.scss -o static --watch",
+    "build:icons": "node icons.js",
+    "build:style": "node-sass src/style/theme.scss -o static; postcss static/theme.css --replace"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.8",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.1",
+    "postcss-preset-env": "^6.5.0",
+    "sass-mq": "^5.0.0"
+  },
+  "dependencies": {
+    "glob": "^7.1.4"
+  }
+}

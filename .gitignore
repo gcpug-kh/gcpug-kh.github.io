@@ -6,3 +6,5 @@ hugo.exe
 hugo.darwin
 hugo.linux
 
+/static/theme.css
+/node_modules

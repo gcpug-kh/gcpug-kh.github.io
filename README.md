@@ -9,6 +9,7 @@ https://gcpug-kh.github.io/
 ```bash
 git clone --recursive git@github.com:gcpug-kh/gcpug-kh.github.io.git
 cd gcpug-kh.github.io
+npm run watch:style
 hugo serve
 ```
 
