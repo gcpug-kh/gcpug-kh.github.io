@@ -13,7 +13,7 @@
 	<meta name="generator" content="Hugo 0.53" />
 	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
-	<title>GCPUG Kaohsiung  | Blog</title>
+	<title>GCPUG Kaohsiung  | Events</title>
 
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -34,8 +34,8 @@
 	
 
 	
-	<link href="https://gcpug-kh.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="GCPUG Kaohsiung"/>
-	<link href="https://gcpug-kh.github.io/blog/index.xml" rel="feed" type="application/rss+xml" title="GCPUG Kaohsiung"/>
+	<link href="https://gcpug-kh.github.io/event/index.xml" rel="alternate" type="application/rss+xml" title="GCPUG Kaohsiung"/>
+	<link href="https://gcpug-kh.github.io/event/index.xml" rel="feed" type="application/rss+xml" title="GCPUG Kaohsiung"/>
 	
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -46,7 +46,7 @@
 	
 </head>
 
-<body class="section blog blog">
+<body class="section event event">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="visually-hidden">
   	<symbol id="alert" viewBox="0 0 448 512">
@@ -160,13 +160,13 @@
 				
 				</li>
 				
-				<li class="" >
+				<li class="active" >
 				
 				<a href="/event/">Events</a>
 				
 				</li>
 				
-				<li class="active" >
+				<li class="" >
 				
 				<a href="/blog/">Blog</a>
 				
@@ -189,20 +189,67 @@
 
 
 <div class="hero">
-	<h1>Blog</h1>
-	<div class="description">
-		<div style="text-align:center">
-Website coming soon...
+    <h1>Events</h1>
+    <div class="description">
+        
+    </div>
 </div>
 
-	</div>
-</div>
 
-<section class="blogs">
-	
+<section id="eventsUpcoming" class="events">
+    <h2 class="part-title">
+        Upcoming
+    </h2>
 </section>
 
 
+<section id="eventsPast" class="events">
+    <h2 class="part-title">
+        Past
+    </h2>
+</section>
+
+
+<script>
+    const createEvent = (e) => {
+        return `
+                <a class="visually-hidden" aria-hidden="true" href="${e.link}">${e.name}</a>
+                <a class="event" href="${e.link}">
+                    <div class="img" style="background-image: url('${e.featured_photo.highres_link}');"></div>
+                    <div class="info">
+                        <div class="date">${(new Date(e.time)).toLocaleDateString('zh-TW')}</div>
+                        <h2>${e.name}</h2>
+                        <span class="brief">${e.venue.name}</span>
+                        <p>${e.plain_text_description.substr(0, 200)}...</p>
+                    </div>
+                </a>
+			`;
+    }
+
+    const construct = (data, id) => {
+        let events = document.getElementById(id);
+        data.forEach(e => {
+            let html = createEvent(e);
+            let article = document.createElement('article');
+            article.innerHTML = html;
+            events.appendChild(article);
+        })
+    }
+
+    const constructUpcoming = (res) => {
+        construct(res.data, 'eventsUpcoming')
+    }
+
+    const constructPast = (res) => {
+        construct(res.data, 'eventsPast')
+    }
+</script>
+<script type="application/javascript"
+        src="https://api.meetup.com/GCPUG-Kaohsiung/events?&sign=true&photo-host=public&page=100&fields=featured_photo, plain_text_description&status=upcoming&callback=constructUpcoming">
+</script>
+<script type="application/javascript"
+        src="https://api.meetup.com/GCPUG-Kaohsiung/events?&sign=true&photo-host=public&page=100&fields=featured_photo, plain_text_description&status=past&callback=constructPast">
+</script>
 
 </main>
 
