@@ -3,29 +3,65 @@
 {{ $lang := $.Page.Language.Lang }}
 
 <div class="hero">
-	<h1>{{ $.Page.Params.Title }}</h1>
-	<div class="description">
-		{{ .Content }}
-	</div>
+    <h1>{{ $.Page.Params.Title }}</h1>
+    <div class="description">
+        {{ .Content }}
+    </div>
 </div>
 
-<section class="events">
-	{{ range .Pages }}
-	<article>
-		<a class="visually-hidden" aria-hidden="true" href="{{ .URL }}">{{ .Title }}</a>
-		<a class="event" href="{{ .URL }}">
-			<div class="img" style="background-image: url({{ .Params.image }});"></div>
-			<div class="info">
-				<div class="date">{{ partial "date-short.html" (dict "time" .Date "lang" $lang) }}</div>
-				<h2>{{ .Title }}</h2>
-				<span class="brief">{{ .Params.brief }}</span>
-				<!-- <div class="reading">{{ .ReadingTime }}</div> -->
-				<p>{{ .Summary }} ...</p>
-			</div>
-		</a>
-	</article>
-	{{ end }}
+
+<section id="eventsUpcoming" class="events">
+    <h2 class="part-title">
+        Upcoming
+    </h2>
 </section>
 
 
+<section id="eventsPast" class="events">
+    <h2 class="part-title">
+        Past
+    </h2>
+</section>
+
+
+<script>
+    const createEvent = (e) => {
+        return `
+                <a class="visually-hidden" aria-hidden="true" href="${e.link}">${e.name}</a>
+                <a class="event" href="${e.link}">
+                    <div class="img" style="background-image: url('${e.featured_photo.highres_link}');"></div>
+                    <div class="info">
+                        <div class="date">${(new Date(e.time)).toLocaleDateString('zh-TW')}</div>
+                        <h2>${e.name}</h2>
+                        <span class="brief">${e.venue.name}</span>
+                        <p>${e.plain_text_description.substr(0, 200)}...</p>
+                    </div>
+                </a>
+			`;
+    }
+
+    const construct = (data, id) => {
+        let events = document.getElementById(id);
+        data.forEach(e => {
+            let html = createEvent(e);
+            let article = document.createElement('article');
+            article.innerHTML = html;
+            events.appendChild(article);
+        })
+    }
+
+    const constructUpcoming = (res) => {
+        construct(res.data, 'eventsUpcoming')
+    }
+
+    const constructPast = (res) => {
+        construct(res.data, 'eventsPast')
+    }
+</script>
+<script type="application/javascript"
+        src="https://api.meetup.com/GCPUG-Kaohsiung/events?&sign=true&photo-host=public&page=100&fields=featured_photo, plain_text_description&status=upcoming&callback=constructUpcoming">
+</script>
+<script type="application/javascript"
+        src="https://api.meetup.com/GCPUG-Kaohsiung/events?&sign=true&photo-host=public&page=100&fields=featured_photo, plain_text_description&status=past&callback=constructPast">
+</script>
 {{ end }}

@@ -6,12 +6,15 @@
     }
   }
 
-  main h1, main .events {
+  main h1 {
     max-width: var(--theJdrSize);
-    margin: 0 auto;
   }
 
   .events {
+    .part-title {
+      color: var(--primary-title);
+      font-weight: bold;
+    }
 
     a.event-links {
       position: absolute !important;
@@ -39,7 +42,7 @@
         background-position: center center;
         background-size: cover;
         --size: 16rem;
-        flex: 0 0 var(--size, 16rem);
+        flex: 0 0 16rem;
         height: var(--size, 16rem);
         width: var(--size, 16rem);
         border-radius: var(--space-2);
@@ -52,6 +55,7 @@
 
         h2 {
           margin: var(--space-3) 0;
+          font-weight: bold;
         }
 
         .reading {
