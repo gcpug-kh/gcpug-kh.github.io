@@ -41,11 +41,12 @@
         display: inline-block;
         background-position: center center;
         background-size: cover;
-        --size: 16rem;
+        --size: 8rem;
         flex: 0 0 16rem;
-        height: var(--size, 16rem);
+        height: var(--size, 8rem);
         width: var(--size, 16rem);
         border-radius: var(--space-2);
+        box-shadow: 2px 2px 5px #CCCCCC;
       }
 
       .info {
