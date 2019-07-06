@@ -32,7 +32,7 @@ googleAnalytics = ""
     themeColor = "#4285f4"
 
 [params.logos]
-    jumbo = "/images/logos/logo_lockup_vertical_white_color.png"
+    jumbo = "/images/logos/logo_lockup_vertical_white.png"
     header = "/images/logos/logo_lockup_horizontal_white.png"
     footer = "/images/logos/logo_lockup_horizontal_color.png"
 
