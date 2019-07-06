@@ -1,5 +1,5 @@
-# GCPUG Official Website
-https://gcpug-kh.github.io/
+# GDG Cloud Kaohsiung Official Website
+https://kaohsiung.gcpug.tw/
 
 ### Requirement
 - [Hugo](https://gohugo.io/getting-started/installing/) >= 0.5

@@ -1,7 +1,7 @@
-baseURL = "https://gcpug-kh.github.io/"
+baseURL = "https://kaohsiung.gcpug.tw/"
 languageCode = "tw"
 defaultContentLanguage = "tw"
-title = "GCPUG Kaohsiung"
+title = "GDG Cloud Kaohsiung"
 
 # Theme
 theme = "devfest-theme-hugo"
@@ -15,13 +15,13 @@ enableMissingTranslationPlaceholders = true
 googleAnalytics = ""
 
 [params]
-    title = "GCPUG Kaohsiung"
+    title = "GDG Cloud Kaohsiung"
     date = "2019-10-03"
-    description = "我們是 Google Cloud Platform User Group a.k.a. GCPUG 的高雄分支，主要探討 Google Cloud Platform 相關技術、服務、應用的社群組織，成立目的希望可以吸引更多南部 GCP 使用者一同來分享技術與交流，歡迎想認識 Google Cloud Platform 或是希望有更多交流機會的朋友一同來抬槓。"
+    description = "Google Develop Group Cloud Kaohsiung a.k.a. GDG Cloud Kaohsiung 為 GDG Cloud 高雄分支，主要為 GCP 相關應用技術交流，希望可以聚集南台灣對於 GCP 有興趣的使用者們加入，也會不定期舉辦聚會活動，想要了解 GDG Cloud Kaohsiung 都在聊些什麼，那就加入我們吧！"
     images = ["/images/social-share.png"]
     email = "gcpug.kh@gmail.com"
-    keywords = "event, gdg, gde, google, programming, android, chrome, developers, web, cloud, androiddev"
-    copyright = "Copyright © 2019, GCPUG; all rights reserved."
+    keywords = "event, gdg, gdg cloud, gde, google, programming, android, chrome, developers, web, cloud, androiddev"
+    copyright = "Copyright © 2019, GDG Cloud Kaohsiung; all rights reserved."
 #    cfpUrl = ""
 #    subscriptionUrl = ""
     appleTouchIcon = "/apple-touch-icon.png"
@@ -32,9 +32,9 @@ googleAnalytics = ""
     themeColor = "#4285f4"
 
 [params.logos]
-    jumbo = "/images/logos/GCPUG_KH_logo_lockup_vertical_white_color.png"
-    header = "/images/logos/GCPUG_KH_logo_lockup_horizontal_white.png"
-    footer = "/images/logos/GCPUG_KH_logo_lockup_horizontal_color.png"
+    jumbo = "/images/logos/logo_lockup_vertical_white_color.png"
+    header = "/images/logos/logo_lockup_horizontal_white.png"
+    footer = "/images/logos/logo_lockup_horizontal_color.png"
 
 #[menu]
 #[[menu.main]]
