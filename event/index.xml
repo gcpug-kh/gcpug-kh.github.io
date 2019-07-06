@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Events on GCPUG Kaohsiung</title>
-    <link>https://gcpug-kh.github.io/event/</link>
-    <description>Recent content in Events on GCPUG Kaohsiung</description>
+    <title>Events on GDG Cloud Kaohsiung</title>
+    <link>https://kaohsiung.gcpug.tw/event/</link>
+    <description>Recent content in Events on GDG Cloud Kaohsiung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tw</language>
     
-	<atom:link href="https://gcpug-kh.github.io/event/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kaohsiung.gcpug.tw/event/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
