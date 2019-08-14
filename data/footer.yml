@@ -10,7 +10,7 @@ follow:
   - name: github
     url: https://github.com/gcpug-kh
   - name: meetup
-    url: https://www.meetup.com/GCPUG-Kaohsiung/
+    url: https://www.meetup.com/GDGCloud-Kaohsiung/
 
 #  - name: twitter
 #    url: https://twitter.com/devfesttoulouse
