@@ -13,7 +13,7 @@
 	<meta name="generator" content="Hugo 0.81.0" />
 	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
-	<title>GDG Cloud Kaohsiung </title>
+	<title>GDG Cloud Kaohsiung  | 從零開始學 Angular - 環境安裝</title>
 
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -41,7 +41,7 @@
 	
 </head>
 
-<body class="404 404html ">
+<body class="page blogangular-basic1-install blog">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="visually-hidden">
   	<symbol id="alert" viewBox="0 0 448 512">
@@ -180,7 +180,115 @@
 
 <main>
 	
-<h1 class="error">Oops!, page /404.html not found !</h1>
+
+<div class="hero" >
+	<div class="img" style="color: #fff;background-image: url(/images/angular-basic/angular.jpg)"></div>
+
+	<div class="description">
+		<h1>
+			<span>從零開始學 Angular - 環境安裝</span>
+			<small>介紹本機環境安裝</small>
+		</h1>
+
+	</div>
+</div>
+
+<section class="content">
+
+	<p>Angular 是一個前端框架，可用於簡單、複雜、精緻的頁面使用，以下範例使用 Angular 10。</p>
+<p>想要使用 Angular，建議對於 HTML、Javascript、CSS 有一定的暸解。</p>
+<h1 id="本機安裝">本機安裝</h1>
+<p>將介紹使用 Angular CLI 的方式安裝。</p>
+<h2 id="環境前置作業">環境前置作業</h2>
+<p>@angular/cli v10.0.0 版本要求：</p>
+<ul>
+<li>node &gt;= 10.13.0</li>
+<li>npm &gt;= 6.11.0</li>
+</ul>
+<p>查看目前 @angular/cli 版本：<code>npm ls @angular/cli -g</code></p>
+<h3 id="nodejs">Node.js</h3>
+<p>可於 <a href="https://nodejs.org/en/">官網</a> 中下載最新或 LTS 版本來安裝。</p>
+<p>查看目前 Node.js 版本：<code>node -v</code></p>
+<h3 id="npm">npm</h3>
+<p>安裝好 Node.js 時會自動安裝 npm，而這是一個套件管理的工具。</p>
+<p>查看目前 npm 版本：<code>npm -v</code></p>
+<h2 id="安裝-angular-cli">安裝 Angular CLI</h2>
+<p>需使用 npm 來安裝 Angular CLI，輸入以下命令來進行安裝。</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm i -g @angular/cli</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="建立應用程式">建立應用程式</h2>
+<p>建立一個應用程式開始學習 Angular。</p>
+<ol>
+<li>使用 <code>ng new</code> 的指令加上應用程式名稱(這裡使用 first-app)來建立：</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ng new first-app</code></pre></td></tr></table>
+</div>
+</div>
+<ol start="2">
+<li>執行後詢問是否新增 Angular routing 路由設定？ 可選擇預設的 y</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">? Would you like to add Angular routing? <span style="color:#f92672">(</span>y/N<span style="color:#f92672">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="3">
+<li>接續會詢問你使用的 CSS 為哪一種? 可選擇預設的 CSS 即可</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">? Which stylesheet format would you like to use?
+❯ CSS
+  SCSS   <span style="color:#f92672">[</span> https://sass-lang.com/documentation/syntax#scss                <span style="color:#f92672">]</span>
+  Sass   <span style="color:#f92672">[</span> https://sass-lang.com/documentation/syntax#the-indented-syntax <span style="color:#f92672">]</span>
+  Less   <span style="color:#f92672">[</span> http://lesscss.org                                             <span style="color:#f92672">]</span>
+  Stylus <span style="color:#f92672">[</span> http://stylus-lang.com                                         <span style="color:#f92672">]</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="執行應用程式">執行應用程式</h2>
+<p>可以使用 Angular CLI 直接在本機架設伺服器，方便本機開發。</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">-- 進入剛剛新增的應用程式資料夾
+cd first-app
+
+-- 啟動伺服器
+ng serve</code></pre></td></tr></table>
+</div>
+</div>
+<p>啟動完成後，進入 http://localhost:4200/ 顯示如下圖，代表環境安裝成功囉！</p>
+<p><img src="first-app.png" alt="啟動伺服器"></p>
+</section>
+
 
 </main>
 

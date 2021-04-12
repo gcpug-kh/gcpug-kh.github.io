@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on GDG Cloud Kaohsiung</title>
@@ -6,9 +6,16 @@
     <description>Recent content in Home on GDG Cloud Kaohsiung</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tw</language>
-    
-	<atom:link href="https://kaohsiung.gcpug.tw/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kaohsiung.gcpug.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Angular - 環境安裝</title>
+      <link>https://kaohsiung.gcpug.tw/blog/angular-basic/1-install/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kaohsiung.gcpug.tw/blog/angular-basic/1-install/</guid>
+      <description>&lt;p&gt;Angular 是一個前端框架，可用於簡單、複雜、精緻的頁面使用，以下範例使用 Angular 10。&lt;/p&gt;
+&lt;p&gt;想要使用 Angular，建議對於 HTML、Javascript、CSS 有一定的暸解。&lt;/p&gt;</description>
+    </item>
     
   </channel>
 </rss>
