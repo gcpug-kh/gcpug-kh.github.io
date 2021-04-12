@@ -64,6 +64,8 @@ draft: false ## 是否為草稿，若為 true 列表將不會顯示
     * 圖片 (`![image alt](https://url)`)
     * 程式碼 (`` `程式碼` ``)
     * :smile: (`:smile:`)
+* 閱讀更多：
+    * 於斷點新增 `<!--more-->`
 * 程式語法高亮 ([Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting/))
     * 第二個參數為語言，語言的選擇可參考上方網址。
     * linenos 為是否顯示行號。
@@ -77,4 +79,3 @@ draft: false ## 是否為草稿，若為 true 列表將不會顯示
 
 {{< / highlight >}}
 ```
-
