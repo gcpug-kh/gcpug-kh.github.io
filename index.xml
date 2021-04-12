@@ -5,17 +5,6 @@
     <link>https://kaohsiung.gcpug.tw/</link>
     <description>Recent content in Home on GDG Cloud Kaohsiung</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>tw</language>
-    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kaohsiung.gcpug.tw/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>從零開始學 Angular - 環境安裝</title>
-      <link>https://kaohsiung.gcpug.tw/blog/angular-basic/1-install/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://kaohsiung.gcpug.tw/blog/angular-basic/1-install/</guid>
-      <description>&lt;p&gt;Angular 是一個前端框架，可用於簡單、複雜、精緻的頁面使用，以下範例使用 Angular 10。&lt;/p&gt;
-&lt;p&gt;想要使用 Angular，建議對於 HTML、Javascript、CSS 有一定的暸解。&lt;/p&gt;</description>
-    </item>
-    
+    <language>tw</language><atom:link href="https://kaohsiung.gcpug.tw/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
