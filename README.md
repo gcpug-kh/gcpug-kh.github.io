@@ -66,6 +66,8 @@ draft: false ## 是否為草稿，若為 true 列表將不會顯示
     * :smile: (`:smile:`)
 * 閱讀更多：
     * 於斷點新增 `<!--more-->`
+* Shortcodes：
+    * 圖片 (`{{< img src="image.png" width="50%" height="50%" border="1px #000 solid" >}}`)
 * 程式語法高亮 ([Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting/))
     * 第二個參數為語言，語言的選擇可參考上方網址。
     * linenos 為是否顯示行號。
