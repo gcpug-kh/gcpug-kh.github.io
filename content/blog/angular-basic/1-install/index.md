@@ -5,15 +5,15 @@ image: "/images/angular-basic/angular.jpg"
 brief: "介紹本機環境安裝"
 draft: true
 ---
-Angular 是一個前端框架，可用於簡單、複雜、精緻的頁面使用，以下範例使用 Angular 10。
+Angular 是一個前端框架，可用於簡單、複雜、精緻的頁面使用，文章將會以 Angular 10 版本來進行講解。
 
-想要使用 Angular，建議對於 HTML、Javascript、CSS 有一定的暸解。
+建議：想要使用 Angular 進行開發，建議對於 HTML、Javascript 以及 CSS 有一定程度的暸解。
 
 <!--more-->
 
 # 本機安裝
 
-將介紹使用 Angular CLI 的方式安裝。
+將介紹使用 Angular CLI 的方式安裝，適用於 Windows 與 macOS，安裝方法相同。
 
 ## 環境前置作業
 
@@ -21,19 +21,24 @@ Angular 是一個前端框架，可用於簡單、複雜、精緻的頁面使用
 * node >= 10.13.0
 * npm >= 6.11.0
 
-查看目前 @angular/cli 版本：`npm ls @angular/cli -g`
+查看目前 @angular/cli 版本：`npm ls @angular/cli -g`  
+{{< img src="angular-cli-version.png" width="70%" >}}
 
 ### Node.js
 
+<!-- {{< img src="Nodejs.png" width="40%" border="solid #000 1px" >}} -->
+
 可於 [官網](https://nodejs.org/en/) 中下載最新或 LTS 版本來安裝。
 
-查看目前 Node.js 版本：`node -v`
+查看目前 Node.js 版本：`node -v`  
+{{< img src="node-version.png" width="70%" >}}
 
 ### npm
 
-安裝好 Node.js 時會自動安裝 npm，而這是一個套件管理的工具。
+npm (Node Package Manager) 又稱套件管理程式，在安裝 Node.js 時，會自動安裝 npm。
 
-查看目前 npm 版本：`npm -v` 
+查看目前 npm 版本：`npm -v`  
+{{< img src="npm-version.png" width="70%" >}}
 
 ## 安裝 Angular CLI
 
@@ -70,18 +75,16 @@ ng new first-app
   Stylus [ http://stylus-lang.com                                         ]
 {{< / highlight >}}
 
+4. 就會開始建立相關檔案，等他跑完專案就建立成功囉！
+
+{{< img src="ng-new-app.png" width="70%" >}}
+
 ## 執行應用程式
 
-可以使用 Angular CLI 直接在本機架設伺服器，方便本機開發。
+使用 Angular CLI 直接在本機架設伺服器，方便本機開發與 Debug，輸入 `ng serve` 即可開啟伺服器，也可以加上 `--open` 會自動開啟瀏覽器。
 
-{{< highlight shell "linenos=true" >}}
--- 進入剛剛新增的應用程式資料夾
-cd first-app
-
--- 啟動伺服器
-ng serve
-{{< / highlight >}}
+{{< img src="ng-serve.png" width="70%" >}}
 
 啟動完成後，進入 http://localhost:4200/ 顯示如下圖，代表環境安裝成功囉！
 
-![啟動伺服器](first-app.png)
+{{< img src="first-app.png" width="60%" >}}
